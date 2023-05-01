@@ -33,8 +33,8 @@ export const Hero = () => {
         <div className='flex flex-col-reverse gap-8 lg:flex-row items-center justify-center container mx-auto mt-2 px-7'>
             <div className='lg:max-w-md text-center lg:text-start'>
                 <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold max-w-[400px]'>Front End React Developer<span className='text-cyan-700'>.</span></h2>
-                <div className='mx-auto flex items-center justify-center lg:justify-start my-5'>
-                    <div className='flex gap-2 h-[22px]'>
+                <div className='mt-5 mb-8 flex justify-center items-center lg:justify-start'>
+                    <div className='flex justify-center gap-2 h-[22px]'>
                         <img src="html.png" alt="html image" />
                         <img src="css.png" alt="css image" />
                         <img src="javascript.png" alt="javascript image" />
