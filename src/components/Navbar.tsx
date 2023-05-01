@@ -10,14 +10,14 @@ import { useState } from 'react'
 
 export const Navbar = () => {
 
-    const [mobileMenu, setMobileMenu] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     function openMenu() {
-        setMobileMenu(true)
+        setMobileMenuOpen(true)
     }
 
     function closeMenu() {
-        setMobileMenu(false)
+        setMobileMenuOpen(false)
     }
 
     const menuAnimation = {
@@ -61,20 +61,20 @@ export const Navbar = () => {
                 </div>
 
                 {/* Overlay */}
-                <div className={mobileMenu ? "absolute top-0 left-0 h-[100vh] w-[100vw] md:hidden bg-black opacity-30" : "hidden"} onClick={closeMenu}></div>
+                <div className={mobileMenuOpen ? "absolute top-0 left-0 h-[100vh] w-[100vw] md:hidden bg-black opacity-30" : "hidden"} onClick={closeMenu}></div>
 
                 {/* Mobile Menu */}
                 <m.div
-                    className={mobileMenu ? "absolute top-0 right-0 h-[100vh] w-[75vw] bg-secondary p-7 md:hidden" : "hidden"}
+                    className={mobileMenuOpen ? "absolute top-0 right-0 h-[100vh] w-[75vw] bg-secondary p-7 md:hidden" : "hidden"}
                     variants={menuAnimation}
-                    animate={mobileMenu ? "open" : "closed"}
+                    animate={mobileMenuOpen ? "open" : "closed"}
                 >
                     <m.div>
                         <IoMdClose
                             className="text-4xl text-gray-100 ml-auto cursor-pointer" onClick={closeMenu}
                         />
                     </m.div>
-                    <ul className="flex flex-col gap-10 h-full justify-center items-center font-bold text-gray-300 text-2xl">
+                    <ul className="flex flex-col gap-10 h-full items-center font-bold text-gray-300 text-2xl mt-16">
                         <li className='cursor-pointer hover:text-cyan-600 duration-300' onClick={closeMenu}>
                             <Link to={"/"}>Home</Link>
                         </li>

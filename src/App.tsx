@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 function App() {
 
   return (
-    <div className='h-[100vh]'>
+    <div className='bg-primary'>
       <div className='h-[10vh]'>
         <Navbar />
       </div>
