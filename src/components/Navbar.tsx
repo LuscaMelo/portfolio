@@ -5,7 +5,7 @@ import { IoMdClose } from 'react-icons/io'
 
 import { motion as m } from "framer-motion"
 
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 
 export const Navbar = () => {
@@ -35,16 +35,40 @@ export const Navbar = () => {
                 <div>
                     <ul className="gap-7 font-bold text-md text-gray-300 hidden md:flex mt-2">
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
-                            <Link to={"/"}>Home_</Link>
+                            <NavLink
+                                className={({ isActive, isPending }) => {
+                                    return isActive ? "text-cyan-600" : isPending ? "pending" : "";
+                                }}
+                                to={"/"}
+                            >Home_
+                            </NavLink>
                         </li>
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
-                            <Link to={"/about"}>About_</Link>
+                            <NavLink
+                                to={"/about"}
+                                className={({ isActive, isPending }) => {
+                                    return isActive ? "text-cyan-600" : isPending ? "pending" : "";
+                                }}
+                            >About_
+                            </NavLink>
                         </li>
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
-                            <Link to={"/projects"}>Projects_</Link>
+                            <NavLink
+                                to={"/projects"}
+                                className={({ isActive, isPending }) => {
+                                    return isActive ? "text-cyan-600" : isPending ? "pending" : "";
+                                }}
+                            >Projects
+                            </NavLink>
                         </li>
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
-                            <Link to={"/contact"}>Contact_</Link>
+                            <NavLink
+                                to={"/contact"}
+                                className={({ isActive, isPending }) => {
+                                    return isActive ? "text-cyan-600" : isPending ? "pending" : "";
+                                }}
+                            >Contact
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
