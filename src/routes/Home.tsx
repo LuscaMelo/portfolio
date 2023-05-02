@@ -4,7 +4,7 @@ import { ProfileImg } from '../components/ProfileImg'
 export const Home = () => {
 
     return (
-        <div className="bg-primary text-white flex flex-col justify-center items-center min-h-[90vh] py-16">
+        <div className="bg-primary text-white flex flex-col justify-center items-center min-h-[90vh] py-16 overflow-hidden">
             <div className='flex flex-col-reverse gap-8 lg:flex-row items-center justify-center container mx-auto mt-2 px-7'>
                 <div className='lg:max-w-md text-center lg:text-start'>
                     <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold max-w-[400px]'>Front End React Developer<span className='text-cyan-700'>.</span></h2>
