@@ -35,16 +35,16 @@ export const Navbar = () => {
                 <div>
                     <ul className="gap-7 font-bold text-md text-gray-300 hidden md:flex mt-2">
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
-                            <Link to={"/"}>Home</Link>
+                            <Link to={"/"}>Home_</Link>
                         </li>
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
-                            <Link to={"/about"}>About</Link>
+                            <Link to={"/about"}>About_</Link>
                         </li>
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
-                            <Link to={"/projects"}>Projects</Link>
+                            <Link to={"/projects"}>Projects_</Link>
                         </li>
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
-                            <Link to={"/contact"}>Contact</Link>
+                            <Link to={"/contact"}>Contact_</Link>
                         </li>
                     </ul>
                 </div>
