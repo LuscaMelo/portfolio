@@ -16,7 +16,7 @@ export const ProjectCard = (props: Props) => {
                 <img className="h-full w-full object-cover object-top" src={props.img} alt="" />
             </div>
             <div className="p-4 flex flex-col justify-between min-h-[180px] h-full">
-                <h3 className="text-lg mb-3">{props.name}</h3>
+                <h3 className="text-lg font-semibold mb-3">{props.name}</h3>
                 <p className="text-sm text-gray-500">{props.description}</p>
                 <div className="flex gap-5 mt-5">
                     <button className="w-[50%] bg-primary">

@@ -13,7 +13,7 @@ export const Projects = () => {
                         <span className="text-2xl float-left bg-cyan-900 px-4 py-2 rounded-lg mr-2">Y</span><p className="pt-6 pb-5">ou can do anything you set your mind to.</p>
                         <span className="absolute top-[0px] left-[60px] text-xs mt-1 text-cyan-700"> - Benjamin Franklin</span>
                     </div>
-                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mt-10">
+                    <div className="grid gap-12 md:gap-8 md:grid-cols-2 lg:grid-cols-4 mt-10">
                         <div className="bg-secondary w-[1fr]">
                             <ProjectCard
                                 img="shopping-cart.png"
