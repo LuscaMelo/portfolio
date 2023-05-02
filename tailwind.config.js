@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         primary: '#171923',
-        secondary: "#191f2c"
+        secondary: "#191f2c",
+        glass: "rgba(24,29,40, 0.92)"
       }
     },
   },

@@ -26,12 +26,12 @@ export const Navbar = () => {
     }
 
     return (
-        <div className="h-[10vh] bg-secondary w-full flex items-center fixed top-0 px-8 z-50">
+        <div className="h-[10vh] min-h-[70px] bg-glass w-full flex items-center fixed top-0 px-8 z-50 backdrop-blur-sm">
             <div className="container mx-auto flex items-center justify-between">
-                <div className="flex items-center">
+                <Link className="flex items-center" to={"/"}>
                     <FaUserAstronaut className='text-gray-100 text-2xl' />
                     <h1 className="font-bold text-gray-300 mt-3"><span className='text-cyan-700'>._</span>LucasMelo<span className='text-cyan-700'></span></h1>
-                </div>
+                </Link>
                 <div>
                     <ul className="gap-7 font-bold text-md text-gray-300 hidden md:flex mt-2">
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
