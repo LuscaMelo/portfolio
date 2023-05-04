@@ -1,6 +1,5 @@
 import { ProjectCard } from "../components/ProjectCard"
 
-
 export const Projects = () => {
     return (
         <div className="container mx-auto text-white">
@@ -16,11 +15,23 @@ export const Projects = () => {
                     <div className="grid gap-12 md:gap-8 md:grid-cols-2 lg:grid-cols-4 mt-10">
                         <div className="bg-secondary w-[1fr]">
                             <ProjectCard
+                                img="blog.png"
+                                name="Blog"
+                                description="Simple blog about cars."
+                                linkTry="https://gym-luscamelo.vercel.app/"
+                                linkGit="https://github.com/LuscaMelo/gym"
+                                techs={["Angular", "Typescript", "Tailwind"]}
+                            />
+                        </div>
+                        <div className="bg-secondary w-[1fr]">
+                            <ProjectCard
                                 img="shopping-cart.png"
                                 name="Shopping Cart"
                                 description="Page of a fictitious product, being able to add it to the shopping cart."
                                 linkTry="https://shopping-cart-luscamelo.vercel.app/"
-                                linkGit="https://github.com/LuscaMelo/shopping-cart" />
+                                linkGit="https://github.com/LuscaMelo/shopping-cart"
+                                techs={["React", "Javascript", "Tailwind"]}
+                            />
                         </div>
                         <div className="bg-secondary w-[1fr]">
                             <ProjectCard
@@ -28,7 +39,9 @@ export const Projects = () => {
                                 name="Pokedex"
                                 description="Listing of pokemons, where the data is consumed in an API (PokeAPI)."
                                 linkTry="https://lucasmelo-pokedex-dio.surge.sh/"
-                                linkGit="https://github.com/LuscaMelo/js-developer-pokedex" />
+                                linkGit="https://github.com/LuscaMelo/js-developer-pokedex"
+                                techs={["HTML", "CSS", "Javascript", "API"]}
+                            />
                         </div>
                         <div className="bg-secondary w-[1fr]">
                             <ProjectCard
@@ -36,7 +49,9 @@ export const Projects = () => {
                                 name="Music Production Website"
                                 description="Simple website about a music production course."
                                 linkTry="https://music-production-gamma.vercel.app/"
-                                linkGit="https://github.com/LuscaMelo/music-production" />
+                                linkGit="https://github.com/LuscaMelo/music-production"
+                                techs={["React", "Javascript", "Tailwind"]}
+                            />
                         </div>
                         <div className="bg-secondary w-[1fr]">
                             <ProjectCard
@@ -44,7 +59,9 @@ export const Projects = () => {
                                 name="Gym Website"
                                 description="Simple website about a gym."
                                 linkTry="https://gym-luscamelo.vercel.app/"
-                                linkGit="https://github.com/LuscaMelo/gym" />
+                                linkGit="https://github.com/LuscaMelo/gym"
+                                techs={["React", "Javascript", "ChakraUI"]}
+                            />
                         </div>
                         <div className="flex justify-center items-center p-5 bg-glass w-[1fr]">
                             <p className='text-white text-xl flex gap-1 ml-1 items-baseline'>...<p className='text-xs'> more soon</p></p>

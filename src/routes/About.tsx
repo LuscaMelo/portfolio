@@ -1,7 +1,7 @@
 import { AiOutlineCode } from 'react-icons/ai'
 import { FaGraduationCap } from 'react-icons/fa'
 
-const Technologies: string[] = ["HTML", "CSS", "Javascript", "Typescript", "React", "NextJS", "Styled Components", "API REST", "Tailwind", "ChakraUI", "Git", "GitHub"]
+const Technologies: string[] = ["HTML", "CSS", "Javascript", "Typescript", "React", "NextJS", "Angular", "API REST", "Styled Components", "Tailwind", "ChakraUI", "Git", "GitHub"]
 
 export const About = () => {
     return (

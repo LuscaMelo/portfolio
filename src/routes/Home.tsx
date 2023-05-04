@@ -7,14 +7,15 @@ export const Home = () => {
         <div className="bg-primary text-white flex flex-col justify-center items-center min-h-[90vh] py-16 overflow-hidden">
             <div className='flex flex-col-reverse gap-8 lg:flex-row items-center justify-center container mx-auto mt-2 px-7'>
                 <div className='lg:max-w-md text-center lg:text-start'>
-                    <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold max-w-[400px]'>Front End React Developer<span className='text-cyan-700'>.</span></h2>
+                    <h2 className='text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold max-w-[400px]'>Front End Developer<span className='text-cyan-700'>.</span></h2>
                     <div className='mt-5 mb-8 flex justify-center items-center lg:justify-start'>
                         <div className='flex justify-center gap-2 h-[22px]'>
                             <img src="html.png" alt="html image" />
                             <img src="css.png" alt="css image" />
                             <img src="javascript.png" alt="javascript image" />
-                            <img src="react.png" alt="react image" />
                             <img src="typescript.png" alt="typescript image" />
+                            <img src="react.png" alt="react image" />
+                            <img src="angular.png" alt="angular image" />
                             <img src="tailwind.png" alt="tailwind image" />
                         </div>
                     </div>
