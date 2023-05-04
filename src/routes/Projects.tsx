@@ -18,8 +18,8 @@ export const Projects = () => {
                                 img="blog.png"
                                 name="Blog"
                                 description="Simple blog about cars."
-                                linkTry="https://gym-luscamelo.vercel.app/"
-                                linkGit="https://github.com/LuscaMelo/gym"
+                                linkTry="https://angular-blog-two.vercel.app/"
+                                linkGit="https://github.com/LuscaMelo/angular-blog"
                                 techs={["Angular", "Typescript", "Tailwind"]}
                             />
                         </div>
