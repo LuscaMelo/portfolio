@@ -7,7 +7,7 @@ export const About = () => {
     return (
         <div className="container mx-auto text-white">
             <div className="flex flex-col mx-8 lg:mx-0 md:flex-row gap-20 mt-20 lg:py-20">
-                <div className="md:w-[60%]">
+                <div className="md:w-[60%] text-sm">
                     <div className="flex items-center mb-12">
                         <h2 className='text-4xl lg:text-5xl font-bold max-w-[400px]'>About Me<span className='text-cyan-800'>.</span></h2>
                     </div>

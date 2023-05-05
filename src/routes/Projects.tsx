@@ -3,7 +3,7 @@ import { ProjectCard } from "../components/ProjectCard"
 export const Projects = () => {
     return (
         <div className="container mx-auto text-white">
-            <div className="flex flex-col mx-8 lg:mx-0 md:flex-row gap-20 mt-20 lg:py-20">
+            <div className="flex flex-col mx-8 2xl:mx-0 md:flex-row gap-20 mt-20 lg:py-20">
                 <div className="w-full mb-20">
                     <div className="flex items-center mb-12">
                         <h2 className='text-4xl lg:text-5xl font-bold max-w-[400px]'>My Projects<span className='text-cyan-800'>.</span></h2>
