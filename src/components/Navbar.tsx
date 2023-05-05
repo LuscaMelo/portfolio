@@ -40,7 +40,7 @@ export const Navbar = () => {
                                     return isActive ? "text-cyan-600" : isPending ? "pending" : "";
                                 }}
                                 to={"/"}
-                            >Home_
+                            >Home
                             </NavLink>
                         </li>
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
@@ -49,7 +49,7 @@ export const Navbar = () => {
                                 className={({ isActive, isPending }) => {
                                     return isActive ? "text-cyan-600" : isPending ? "pending" : "";
                                 }}
-                            >About_
+                            >About
                             </NavLink>
                         </li>
                         <li className='cursor-pointer hover:text-cyan-600 duration-300 text-sm'>
