@@ -1,5 +1,6 @@
 import { BsGithub } from 'react-icons/bs'
 import { VscVmRunning } from 'react-icons/vsc'
+import { motion as m } from "framer-motion"
 
 interface Props {
     img: string
@@ -16,7 +17,7 @@ export const ProjectCard = (props: Props) => {
     return (
         <div>
             <div className='w-full object-cover'>
-                <img className="h-full w-full object-cover object-top" src={props.img} alt="" />
+                <m.img className="h-full w-full object-cover object-top" src={props.img} whileHover={{ scale: 1.02, transition: { duration: 0.2 } }} />
             </div>
             <div className="p-4 flex flex-col justify-between min-h-[180px] h-full">
                 <h3 className="text-lg font-semibold mb-3">{props.name}</h3>

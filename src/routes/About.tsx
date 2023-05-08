@@ -1,11 +1,34 @@
 import { AiOutlineCode } from 'react-icons/ai'
 import { FaGraduationCap } from 'react-icons/fa'
+import { motion as m } from "framer-motion"
 
 const Technologies: string[] = ["HTML", "CSS", "Javascript", "Typescript", "React", "NextJS", "Angular", "API REST", "Styled Components", "Tailwind", "ChakraUI", "Git", "GitHub"]
 
 export const About = () => {
+
+    const animateDiv = {
+        hidden: {
+            opacity: 0,
+            x: -500,
+        },
+        show: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1.7,
+                type: 'spring',
+                bounce: 0.3,
+            }
+        }
+    }
+
     return (
-        <div className="container mx-auto text-white">
+        <m.div
+            className="container mx-auto text-white"
+            variants={animateDiv}
+            initial="hidden"
+            animate="show"
+        >
             <div className="flex flex-col mx-8 lg:mx-0 md:flex-row gap-20 mt-20 lg:py-20">
                 <div className="md:w-[60%] text-sm">
                     <div className="flex items-center mb-12">
@@ -42,6 +65,6 @@ export const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </m.div>
     )
 }

@@ -2,10 +2,33 @@ import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BsPhone } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
+import { motion as m } from "framer-motion"
 
 export const Contact = () => {
+
+    const animateDiv = {
+        hidden: {
+            opacity: 0,
+            x: -500,
+        },
+        show: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1.7,
+                type: 'spring',
+                bounce: 0.3,
+            }
+        }
+    }
+
     return (
-        <div className="mx-8">
+        <m.div
+            className="mx-8"
+            variants={animateDiv}
+            initial="hidden"
+            animate="show"
+        >
             <div className="container mx-auto text-white my-20 pb-5">
                 <div className="flex flex-col items-center gap-10 lg:flex-row">
                     <div className="flex-1">
@@ -51,6 +74,6 @@ export const Contact = () => {
                     </a>
                 </div>
             </div>
-        </div >
+        </m.div >
     )
 }

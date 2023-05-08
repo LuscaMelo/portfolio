@@ -1,8 +1,31 @@
 import { ProjectCard } from "../components/ProjectCard"
+import { motion as m } from "framer-motion"
 
 export const Projects = () => {
+
+    const animateDiv = {
+        hidden: {
+            opacity: 0,
+            x: -500,
+        },
+        show: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1.7,
+                type: 'spring',
+                bounce: 0.3,
+            }
+        }
+    }
+
     return (
-        <div className="container mx-auto text-white">
+        <m.div
+            className="container mx-auto text-white"
+            variants={animateDiv}
+            initial="hidden"
+            animate="show"
+        >
             <div className="flex flex-col mx-8 2xl:mx-0 md:flex-row gap-20 mt-20 lg:py-20">
                 <div className="w-full mb-20">
                     <div className="flex items-center mb-12">
@@ -16,10 +39,20 @@ export const Projects = () => {
                         <div className="bg-secondary w-[1fr]">
                             <ProjectCard
                                 img="blog.png"
-                                name="Blog"
+                                name="The Blog"
                                 description="Simple blog about cars."
                                 linkTry="https://angular-blog-two.vercel.app/"
                                 linkGit="https://github.com/LuscaMelo/angular-blog"
+                                techs={["Angular", "Typescript", "Tailwind"]}
+                            />
+                        </div>
+                        <div className="bg-secondary w-[1fr]">
+                            <ProjectCard
+                                img="quiz.png"
+                                name="Harry Potter Quiz"
+                                description="Dynamic quiz about the Harry Potter series."
+                                linkTry="https://angular-quiz-woad.vercel.app/"
+                                linkGit="https://github.com/LuscaMelo/angular-quiz"
                                 techs={["Angular", "Typescript", "Tailwind"]}
                             />
                         </div>
@@ -69,6 +102,6 @@ export const Projects = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </m.div>
     )
 }
