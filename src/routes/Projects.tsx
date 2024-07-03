@@ -38,6 +38,26 @@ export const Projects = () => {
                     <div className="grid gap-12 md:gap-8 md:grid-cols-2 lg:grid-cols-4 mt-10">
                         <div className="bg-secondary w-[1fr]">
                             <ProjectCard
+                                img="yourbank.png"
+                                name="YourBank"
+                                description="Website created for a fictitious bank"
+                                linkTry="https://your-bank-pi.vercel.app/"
+                                linkGit="https://github.com/LuscaMelo/your-bank"
+                                techs={["Angular", "Typescript", "Tailwind"]}
+                            />
+                        </div>
+                        <div className="bg-secondary w-[1fr]">
+                            <ProjectCard
+                                img="car-marketplace.png"
+                                name="Car Marketplace"
+                                description="Fictional sports car marketplace"
+                                linkTry="https://car-marketplace-six.vercel.app/"
+                                linkGit="https://github.com/LuscaMelo/car-marketplace"
+                                techs={["React", "NextJS", "Typescript", "Tailwind"]}
+                            />
+                        </div>
+                        <div className="bg-secondary w-[1fr]">
+                            <ProjectCard
                                 img="blog.png"
                                 name="The Blog"
                                 description="Simple blog about cars."
