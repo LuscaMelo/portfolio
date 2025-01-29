@@ -3,6 +3,14 @@ import { motion as m } from "framer-motion";
 
 const projects = [
     {
+        img: "underwater.png",
+        name: "Underwater",
+        description: "Fictitious website for a tourism agency",
+        linkTry: "https://underwater-iota.vercel.app/",
+        linkGit: "https://github.com/LuscaMelo/underwater",
+        techs: ["NextJS", "Typescript", "Tailwind", "SwiperJS"],
+    },
+    {
         img: "yourbank.png",
         name: "YourBank",
         description: "Website created for a fictitious bank",

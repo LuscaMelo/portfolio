@@ -28,12 +28,12 @@ export const ProjectCard = (props: Props) => {
                     ))}
                 </div>
                 <div className="flex gap-5 mt-5">
-                    <button className="w-[50%] bg-primary">
+                    <button className="w-[50%] bg-primary hover:bg-cyan-700 duration-300 hover:bg-opacity-30">
                         <a className='flex items-center justify-center gap-3 p-2' href={props.linkTry} target="_blank" rel="noopener noreferrer">
                             <VscVmRunning />Try it
                         </a>
                     </button>
-                    <button className="flex items-center justify-center gap-3 w-[50%] bg-primary">
+                    <button className="w-[50%] bg-primary hover:bg-cyan-700 duration-300 hover:bg-opacity-30">
                         <a className='flex items-center justify-center gap-3 p-2' href={props.linkGit} target="_blank" rel="noopener noreferrer">
                             <BsGithub />Code
                         </a>
