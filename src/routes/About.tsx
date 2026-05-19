@@ -35,11 +35,13 @@ export const About = () => {
                         <h2 className='text-4xl lg:text-5xl font-bold max-w-[400px]'>About Me<span className='text-cyan-800'>.</span></h2>
                     </div>
                     <span className="text-2xl float-left bg-cyan-900 px-4 py-2 rounded-lg mr-2">H</span><p className="pt-6 pb-5">ey, I'm Lucas!</p>
-                    <p>I am extremely passionate about technology and its entire ecosystem, with the main objective of facilitating interaction between the user and the system/software interface.</p>
-                    <p className="mt-5">I currently live in the city of Carapicuiba, which is located in the west zone of São Paulo.</p>
-                    <p className="mt-5">My first contact with web development started in 2018 during my college graduation, where I studied a little about HTML, CSS and Javascript. Already in 2019, I decided to dedicate all my time to the development of web applications, tools and its entire ecosystem.</p>
-                    <p className="mt-5">My last experience as a front-end developer was in 2022, where I was present in the development of online courses on the SENAI platform, being responsible for the functioning of the resources used and fluidity in use, ensuring a good experience for students.</p>
-                    <p className="mt-5">Today technology is part of my daily life, from work to my hobbies.</p>
+                    <div className='flex flex-col gap-3'>
+                        <p>I am a Front-End Developer with over 4 years of experience creating modern, high-performance, and user-centric web applications.</p>
+                        <p>Specializing in React, Next.js, Angular, and TypeScript, I work on developing scalable, responsive, and accessible interfaces, always focusing on performance, usability, and visual quality.</p>
+                        <p>I also have experience with UX/UI Design using Figma and Adobe, allowing me to combine development and design to create more consistent and intuitive digital experiences.</p>
+                        <p>In addition to Front-End, I have been expanding my work to Back-End development with Node.js, Express, Prisma ORM, PostgreSQL, and MongoDB, broadening my vision of architecture and building complete applications.</p>
+                        <p>Technology is part of my daily life—not only as a profession but also as a personal interest. I am constantly studying new tools, exploring best practices, and seeking ways to develop increasingly efficient, modern, and impactful digital products.</p>
+                    </div>
                 </div>
                 <div className="md:w-[40%]">
                     <div>

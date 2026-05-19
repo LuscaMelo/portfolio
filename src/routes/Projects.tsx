@@ -3,6 +3,22 @@ import { motion as m } from "framer-motion";
 
 const projects = [
     {
+        img: "world-cup.png",
+        name: "World Cup 2026™",
+        description: "Fictitious full stack site for the 2026 FIFA World Cup",
+        linkTry: "https://world-cup-frontend.vercel.app/",
+        linkGit: "https://github.com/LuscaMelo/world-cup-backend",
+        techs: ["NextJS", "Typescript", "Tailwind", "NodeJs", "Express", "Prisma", "PostgrSQL", "REST API"],
+    },
+    {
+        img: "movio.png",
+        name: "Movio App",
+        description: "Movie platform using the TMDB API",
+        linkTry: "https://movio-app-seven.vercel.app/",
+        linkGit: "https://github.com/LuscaMelo/movio-app",
+        techs: ["Angular", "Typescript", "RxJS", "Tailwind", "REST API"],
+    },
+    {
         img: "underwater.png",
         name: "Underwater",
         description: "Fictitious website for a tourism agency",
@@ -56,7 +72,7 @@ const projects = [
         description: "Listing of pokemons, where the data is consumed in an API (PokeAPI).",
         linkTry: "https://lucasmelo-pokedex-dio.surge.sh/",
         linkGit: "https://github.com/LuscaMelo/js-developer-pokedex",
-        techs: ["HTML", "CSS", "Javascript", "API"],
+        techs: ["HTML", "CSS", "Javascript", "REST API"],
     },
     {
         img: "music-production.png",
@@ -105,14 +121,16 @@ export const Projects = () => {
                     {/* Citação */}
                     <div className="relative w-full md:max-w-md">
                         <div className="flex items-start">
-                            <span className="text-2xl bg-cyan-900 px-4 py-2 rounded-lg mr-2">
+                            <span className="text-6xl lg:text-2xl bg-cyan-900 px-4 py-2 rounded-xl lg:rounded-lg mr-2">
                                 Y
                             </span>
-                            <p className="pt-1">ou can do anything you set your mind to.</p>
+                            <div>
+                                <p className="pt-1">ou can do anything you set your mind to.</p>
+                                <span className="text-xs mt-1 text-cyan-700">
+                                    - Benjamin Franklin
+                                </span>
+                            </div>
                         </div>
-                        <span className="absolute top-[25px] left-[60px] text-xs mt-1 text-cyan-700">
-                            - Benjamin Franklin
-                        </span>
                     </div>
 
                     {/* Lista de Projetos */}

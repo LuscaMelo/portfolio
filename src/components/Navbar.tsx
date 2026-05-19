@@ -6,7 +6,7 @@ import { IoMdClose } from 'react-icons/io'
 import { motion as m } from "framer-motion"
 
 import { Link, NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const Navbar = () => {
 
@@ -24,6 +24,18 @@ export const Navbar = () => {
         open: { opacity: 1, x: 0 },
         closed: { opacity: 0.3, x: "100%" },
     }
+
+    useEffect(() => {
+        if (mobileMenuOpen) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+        }
+
+        return () => {
+            document.body.style.overflow = "auto"
+        }
+    }, [mobileMenuOpen])
 
     return (
         <div className="h-[10vh] min-h-[70px] bg-glass w-full flex items-center fixed top-0 px-8 z-50 backdrop-blur-sm">
@@ -85,7 +97,7 @@ export const Navbar = () => {
                 </div>
 
                 {/* Overlay */}
-                <div className={mobileMenuOpen ? "absolute top-0 left-0 h-[100vh] w-[100vw] md:hidden bg-black opacity-30" : "hidden"} onClick={closeMenu}></div>
+                <div className={mobileMenuOpen ? "absolute top-0 left-0 h-[100vh] w-[100vw] md:hidden bg-gray-950 opacity-70" : "hidden"} onClick={closeMenu}></div>
 
                 {/* Mobile Menu */}
                 <m.div
