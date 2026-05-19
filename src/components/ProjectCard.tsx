@@ -16,7 +16,7 @@ export const ProjectCard = (props: Props) => {
 
     return (
         <div>
-            <a href={props.linkTry}>
+            <a href={props.linkTry} target="_blank" rel="noopener noreferrer">
                 <div className='w-full object-cover'>
                     <m.img className="h-full w-full object-cover object-top" src={props.img} whileHover={{ scale: 1.02, transition: { duration: 0.2 } }} />
                 </div>
